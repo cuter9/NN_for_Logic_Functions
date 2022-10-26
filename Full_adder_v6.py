@@ -14,7 +14,7 @@ import time
 # the parameters of the network
 numInputs = [3]  # full adder inputs
 numHdLayers = [10, 10]  # [number of layer nodes, ..., number of layer nodes]
-numOutputs = [2]        # full adder outputs
+numOutputs = [2]  # full adder outputs
 bias = 1
 network_params = {'numInputs': numInputs, 'numHdLayers': numHdLayers, 'numOutputs': numOutputs, 'bias': bias}
 
@@ -41,14 +41,13 @@ Xi = array([
     [1, 1, 0],
     [1, 1, 1]], dtype=float)
 Yi = array([[0, 0],
-             [0, 1],
-             [0, 1],
-             [1, 0],
-             [0, 1],
-             [1, 0],
-             [1, 0],
-             [1, 1]], dtype=float)
-
+            [0, 1],
+            [0, 1],
+            [1, 0],
+            [0, 1],
+            [1, 0],
+            [1, 0],
+            [1, 1]], dtype=float)
 
 # parameters of training sample
 samples_size = {'samples_size': Xi.shape[0]}  # the number of samples for training
