@@ -26,7 +26,7 @@ mem = 0.98  # momentum rate
 mu = 10.0  # initial mu for LM method
 mu_ir = 2.0  # increment rate for adjusting mu
 mu_dr = 0.7  # decrement rate for adjusting mu
-train_method = 'lm'  # 'gdm' for gradient descent w momentum; 'lm' for lm
+train_method = 'gdm'  # 'gdm' for gradient descent w momentum; 'lm' for lm
 train_params = {'train_method': train_method, 'perf_goal': perf_goal, 'epochs': no_epochs, 'mem': mem, 'lr': lr,
                 'mu': mu, 'mu_ir': mu_ir, 'mu_dr': mu_dr}
 
