@@ -7,7 +7,7 @@ Created on Sun Oct  7 18:18:44 2020
 1. implemented by using pytorch
 """
 import numpy as np
-import NeuralNetwork_v5 as NN
+import NeuralNetwork_v6 as NN
 from numpy import array
 import time
 
@@ -43,28 +43,6 @@ Y = array([[0],
            [1],
            [1],
            [0]], dtype=float)
-
-# training data for full adder simulation,  Xfd : input, Yfd : target
-Xfd = array([
-    [0, 0, 0],
-    [0, 0, 1],
-    [0, 1, 0],
-    [0, 1, 1],
-    [1, 0, 0],
-    [1, 0, 1],
-    [1, 1, 0],
-    [1, 1, 1]], dtype=float)
-Yfd = array([[0, 0],
-             [0, 1],
-             [0, 1],
-             [1, 0],
-             [0, 1],
-             [1, 0],
-             [1, 0],
-             [1, 1]], dtype=float)
-
-Xi = Xfd  # choice sample data for simulation
-Yi = Yfd
 
 # parameters of training sample
 samples_size = {'samples_size': Xi.shape[0]}  # the number of samples for training
